@@ -16,7 +16,7 @@ export default function Navbar() {
                     <Menu.Item>
                         <Button
                             primary
-                            size="mino"
+                            size="mini"
                             onClick={() => {
                                 router.push("/tasks/new");
                             }}>

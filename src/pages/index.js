@@ -22,16 +22,16 @@ export default function HomePage({ tasks }) {
         );
 
     return (
-        <Container>
+        <Container style={{ padding: "20px" }}>
             <Card.Group itemsPerRow={4}>
                 {tasks.map((task) => (
                     <Card key={task._id}>
                         <Card.Content>
-                            <Card.Header>Matthew</Card.Header>
+                            <Card.Header>{task.title}</Card.Header>
                             <Card.Meta>
-                                <span className="date">Joined in 2015</span>
+                                <span className="date">Innversa solutions</span>
                             </Card.Meta>
-                            <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
+                            <Card.Description>{task.description}.</Card.Description>
                         </Card.Content>
                         <Card.Content extra>
                             <Button color="blue">View</Button>
